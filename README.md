@@ -2,7 +2,7 @@
 
 Repertorio criado para enviar projetos feitos por mim
 
-## O quê à no repositorio?
+## O quê a no repositorio?
 
 Projetos da universidade, cursos, projetos de extensão e pessoais 
 

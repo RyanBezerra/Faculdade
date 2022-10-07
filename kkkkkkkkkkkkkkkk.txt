@@ -1,0 +1,139 @@
+#include<stdio.h>
+
+#include<string.h>
+
+int main(){
+
+ char frase[76] , letra;
+
+ int i , a , b;
+
+ 
+
+ a = 0;
+
+ i = 0;
+
+
+
+ printf("Digite a frase (Maximo 75 caracteres): ");
+
+ gets(frase);
+
+ 
+
+ b = strlen(frase);
+
+ 
+
+ printf("Digite a letra: ");
+
+ scanf("%c", &letra);
+
+
+
+ while (i <= b) {
+
+
+
+  if (frase[i] == letra) {
+
+   a = a + 1;
+
+  }
+
+  i++;
+
+ }
+
+ printf("A letra \'%c\' apareceu %d vezes", letra , a);
+
+}
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <stdlib.h>
+
+int main (){
+
+	float preco, n5, n10, n15, n20;
+
+	int escolha;
+
+	n5 = n10 = n15 = n20 = 0;
+
+	
+
+	printf("Digite 0 para terminar a execucao do script \n");
+
+  printf("\n");
+
+  do{
+
+      printf("Preco do produto: ");
+
+ 	    scanf("%f", &preco);
+
+
+
+      if(preco == 0){
+
+      system("pause");
+
+      }
+
+      else if (preco <= 100){
+
+		
+
+		n5 = preco - (preco * 5/100);
+
+		printf("Com desconto: R$%.2f\n", n5);
+
+		
+
+	} else if (preco > 101 && preco <= 200) {
+
+		
+
+		n10 = preco - (preco * 10/100);
+
+		printf("Com desconto: R$%.2f\n", n10);
+
+		
+
+	} else if (preco > 201 && preco < 500) {
+
+		
+
+		n15 = preco - (preco * 15/100);
+
+		printf("Com desconto: R$%.2f\n", n15);
+
+		
+
+	} else if(preco >= 500){
+
+	  n20 = preco - (preco * 20/100);
+
+		printf("Com desconto: R$%.2f\n", n20);
+
+	}	
+
+	
+
+
+
+} while(preco != 0);
+
+}

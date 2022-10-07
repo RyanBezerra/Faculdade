@@ -1,14 +1,14 @@
-//Faça um programa que lê um conjunto de 10 valores inteiros e verifica se algum dosvalores é igual a média dos mesmos.
+//FaÃ§a um programa que lÃª um conjunto de 10 valores inteiros e verifica se algum dosvalores Ã© igual a mÃ©dia dos mesmos.
 #include <stdio.h>
 
 int main(){
-	int num[4], soma, media, i;
+	int num[10], soma, media, i;
 	
-	for(i = 1; i <= 4; i++){
+	for(i = 1; i <= 10; i++){
 		printf("Digite um numero: ");
 		scanf("%d", &num[i]);
 	}
-	for(i = 1; i <= 4; i++){
+	for(i = 1; i <= 10; i++){
 		soma = soma + num[i];
 	}
 	
@@ -18,7 +18,7 @@ int main(){
 	printf("Media = %d\n", media); 
 	printf("\n"); 
 	
-	for(i = 1; i <= 4; i++){
+	for(i = 1; i <= 10; i++){
 		if(num[i] == media){
 			printf("A media e igual ao numero %d digitado anteriormente\n", num[i]);
 		} 
